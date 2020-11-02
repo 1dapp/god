@@ -51,7 +51,7 @@ async function getAirdrop(){
             var _gas = result + 999;
             myContract.getAirdrop(refer, {from: ethereum.selectedAddress, gas: _gas}, function(err, result) {
               if(!err){
-                document.getElementById("popmsg").innerHTML = "400 XUNII Sent to your wallet Tx Hash: "+result;
+                document.getElementById("popmsg").innerHTML = "0.1 GOD Sent to your wallet Tx Hash: "+result;
                 modal.style.display = "inline-block";
                 console.log(result);
               }
